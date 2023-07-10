@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <title>消費税計算アプリ</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/carousel.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <!-- Header(Start) -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-warning" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="./images/logo.png" />消費税計算アプリ </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header(End) -->
+
+    <!-- Main(Start) -->
+    <main>
+      <div class="keisan bg-warning">
+        <h1 class="h1 text-center">消費税計算しよう・・・</h1>
+        <div class="card m-auto" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h6 class="card-title text-center">税抜き価格を入力</h6>
+            <div class="input-group">
+              <input type="number" value="0" style="text-align: right" class="form-control" id="inputtarget" />
+              <span class="input-group-text">円</span>
+            </div>
+            <p class="card-text">
+              Press the button to display<br />
+              the purchase price
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">消費税率</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="tax-10" value="option1" checked />
+                <label class="form-check-label" for="exampleRadios1"> 10% </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="tax-8" value="option2" />
+                <label class="form-check-label" for="exampleRadios2"> 8%</label>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary" id="button_push">push</a>
+            <h6 class="card-title text-center">税込みを入力</h6>
+            <div class="input-group">
+              <input type="number" value="0" style="text-align: right" class="form-control" id="total" readonly />
+              <span class="input-group-text">円</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main(End) -->
+
+    <!-- Footer(Start) -->
+    <div class="footer">
+      <footer class="bg-dark">
+        <div class="container text-muted py-5">
+          <p class="float-end mb-1"><a href="#">Back to top</a></p>
+          <p class="mb-1">&copy; Bootstrap</p>
+          <p class="mb-0">
+            <a href="https://getbootstrap.jp" target="_blank">BootStrap公式サイト</a>や <a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+            <a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer(End) -->
+
+    <!-- JavaScript -->
+    <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./libs/bootstrap/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
